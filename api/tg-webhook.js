@@ -1,8 +1,3 @@
-export default async function handler(req, res) {
-  if (req.method === 'GET') return res.status(200).send('tg-webhook is alive');
-  // Telegram will POST here later
-  return res.status(200).json({ ok: true });
-}
 // api/tg-webhook.js
 const TG_API = (token) => `https://api.telegram.org/bot${token}`;
 const VF_BASE = 'https://general-runtime.voiceflow.com';
